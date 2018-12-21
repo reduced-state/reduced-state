@@ -1,0 +1,21 @@
+{
+	"name": "@reduced-state/test-utils",
+	"version": "0.0.0",
+	"description": "Shared test utilities for reduced-state. This package is not published.",
+	"keywords": [
+		"test"
+	],
+	"author": "Alessio Scalici <alessio.scalici@gmail.com>",
+	"homepage": "",
+	"license": "ISC",
+	"main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+	"files": [
+		"lib"
+	],
+	"publishConfig": {
+		"access": "public"
+	}
+}

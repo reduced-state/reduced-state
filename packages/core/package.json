@@ -1,0 +1,48 @@
+{
+  "name": "@reduced-state/core",
+  "version": "0.0.0",
+  "description": "The core library of reduced-state. It contains the API to create reducers, action creators and selectors.",
+  "keywords": [
+    "reducer",
+    "state-manager",
+    "redux",
+    "boilerplate"
+  ],
+  "author": "Alessio Scalici <alessio.scalici@gmail.com>",
+  "homepage": "https://github.com/reduced-state/core#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reduced-state/core.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint \"./src/*.js\" \"./src/**/*.js\" \"./test/*.js\" \"./test/**/*.js\"",
+    "build": "babel src -d dist",
+    "prepublishOnly": "mv ./dist/* ./"
+  },
+  "bugs": {
+    "url": "https://github.com/reduced-state/core/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "redux": "^4.0.1",
+    "regenerator-runtime": "^0.13.1"
+
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '10'
+install:
+- npm install
+script:
+- npm run lint
+- npm test
+- npm run build
+branches:
+  only:
+  - /^\d+\.\d+\.\d+$/
+deploy:
+  provider: npm
+  email: alessio.scalici@gmail.com
+  api_key:
+    secure: AfmMzMeKKVo5yF/8yL2MIDfjTzC9xhia0+IF/WINL4n56a1PHkZ6Pm9P0zXBkAcK/Eq0wCJzR6nWLFtMy7Ba3PR6qhOJl6+VvDE/XhNzRIJV9nDGfKqRavNzwKkjoZxAfEDAcqA9uT0Sl634lOvOIH7Hes0hnxHYMxkcQQGmhHJZDDeN2qp/3E7wchIPyEwuCKxh3DPsulB2kd3aws/Aj5E/bx5vFuaE0dsaXTpLwY8l0gsuRVFqccPzLyPr9ADEW4hflZqlbGsHAxwh8UFOtL1LlWkuaL+en9UCxmVEe+xDKNfY6KkDHKVdwTFFqlxf113w7DYng+VGGQjxKiL4QsoCFiA4lXuoEYa+awi20SsYxD93kXWgMf2uKaFjMMotcr0mc12aAr67kW0lUrwsFbFStC969n15EMkzyr/S63apcR47w2hqskd8OFmR4lLTZjNWLLHbeC/inX+r3zqilQQSaqIbKpcHKVVGqyNV/lvZN6PYqZJSktuOigfczZ0cDWMtZdJO86IPJFjpaiWw/tqeFoElc+QC2EkaofGzCOxo0SFCpjZhche1twwsKiOM+lGuS6nSentARxUws9hP92fIrMgyO533vSn/Qz6nFXd5VUS1QQaZ/HGF1zl8+hXJNaBtfTtI5MUpooScpdGw7s5fUHW15zPvHZSwmSTChDk=
+  skip_cleanup: true
+  on:
+    tags: true
